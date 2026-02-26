@@ -143,3 +143,22 @@ body {
     font-size: 90%;
   }
 }
+/* Sticky Navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Fade-in Animation */
+.card, .product {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.card.visible, .product.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
